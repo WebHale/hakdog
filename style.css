@@ -1,0 +1,43 @@
+.hakdog h1{
+ font-size: 20px;
+	position: absolute;
+	color: yellow;
+	top: 20%;
+	left: 40%;
+	transform: translate(-30%,-50%);
+}
+.hakdog h2{
+ font-size: 20px;
+ color: yellow;
+	position: absolute;
+	top: 60%;
+	left: 45%;
+	transform: translate(-30%,-50%);
+}
+article#imgs img{
+ margin-left: 40px;
+ margin-top: 150;
+}
+body{
+ overflow-x: hidden;
+ background: fixed;
+ background: url("https://media.tenor.com/gIXGFogJlgwAAAAC/hearts-heart.gif");
+ 
+}
+div#By input{
+ border-color: pink;
+ background: darkblue;
+ color: white;
+ border: 2px solid darkblue;
+ border-radius: 30px;
+ cursor: pointer;
+}
+div#Bn input{
+ border-color: pink;
+ background: darkblue;
+ color: white;
+ border: 2px solid darkblue;
+ border-radius: 30px;
+ cursor: pointer;
+}
+
