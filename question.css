@@ -1,0 +1,54 @@
+*{
+ padding: 0px;
+ margin: 0px;
+ overflow: hidden;
+}
+body{
+ background-color: #3f453f;
+}
+.kaizen p{
+ color: white;
+ font-size: 10px;
+ margin: 100px auto;
+ padding-left: 115px;
+}
+.wrapper{
+ width: 300px;
+ height: 200px;
+	margin:40% auto;
+	justify-content: center;
+	border-radius: 25px;
+	background-color: #54071c;
+	box-shadow: 0 0 17px #ff0088;
+}
+.container{
+ text-align: center;
+ padding: 80px 20px;
+}
+.container button{
+ background: #ff0088;
+ margin: 30px 20px;
+ color: white;
+ width: 60px;
+ height: 30px;
+ border-radius: 20px;
+ border: 1px solid white;
+}
+.container p {
+ color: white;
+ text-shadow: 0 0 17px #eaffea;
+ animation-duration: 2s;
+ animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}

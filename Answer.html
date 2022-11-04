@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Hi Crush</title>
+ <link rel="stylesheet" href="question.css">
+</head>
+<body>
+  <div class="wrapper">
+    <div class="container">
+      <p id="question">Pwede ba Manligaw?</p><br>
+      <button class="btn" id="yes">Yes</button>
+      <button class="btns" id="hinde">Hinde</button>
+    </div>
+  </div>
+  <div class="kaizen">
+   <p>Web Developer : Kaizen Webbo</p>
+  </div>
+</body>
+<script>
+  const noBtn = document.getElementById('hinde');
+  const yesBtn = document.getElementById('yes');
+  const ques = document.getElementById('question');
+  noBtn.addEventListener("click", ()=>{
+    let rand = Math.floor(Math.random() * (2 - 10) +1);
+    let rand2 = Math.floor(Math.random() * (-50 - 30) +1);
+    noBtn.style.transform = "translate("+rand+"px,"+rand2+"px)";
+    });
+    yesBtn.addEventListener("click",()=>{
+     ques.innerHTML = "Chat me if Yes!"
+    })
+</script>
+</html>
