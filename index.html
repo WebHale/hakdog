@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Page title</title>
+ <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <div class="wrapper">
+  <div class="container">
+    <p id="question">What if tayo talaga payag ka?</p>
+    <button class="btn" id="yes">Yes</button>
+    <button class="btn" id="hinde">Hinde</button>
+  </div>
+ </div>
+</body>
+ <script>
+   const noBtn = document.getElementById('hinde');
+   const yesBtn = document.getElementById('yes');
+   const ques = document.getElementById('question');
+   noBtn.addEventListener("click", ()=>{
+    let rand = Math.floor(Math.random() * (5 - 10) + 1);
+    let rand2 = Math.floor(Math.random() * (-40 - 70) + 1);
+    noBtn.style.transform = "translate("+rand+"px, "+rand2+"px)";
+  });
+  yesBtn.addEventListener("click", ()=>{
+   ques.innerHTML = "Ayieeee you said yes!mwaah"
+  })
+ </script>
+</html>
